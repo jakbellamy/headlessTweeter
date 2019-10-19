@@ -1,6 +1,8 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 
+import {scraper} from './lib/scraper.js';
+
 const PORT = 7565;
 const router = express.Router();
 
@@ -13,3 +15,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Headless Tweeter is listening on port ${PORT}!`));
+
+scraper('dril')
