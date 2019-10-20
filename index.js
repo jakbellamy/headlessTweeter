@@ -10,10 +10,10 @@ const app = express()
   .use(bodyParser.urlencoded({extended: true}))
   .use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.send('Headless Tweeter is Live!!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Headless Tweeter is Live!!');
+// });
+//
+// app.listen(PORT, () => console.log(`Headless Tweeter is listening on port ${PORT}!`));
 
-app.listen(PORT, () => console.log(`Headless Tweeter is listening on port ${PORT}!`));
-
-scraper('celestienguyen')
+scraper('realdonaldtrump')
