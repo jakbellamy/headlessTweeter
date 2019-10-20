@@ -10,10 +10,15 @@ const app = express()
   .use(bodyParser.urlencoded({extended: true}))
   .use(bodyParser.json());
 
-// app.get('/', (req, res) => {
-//   res.send('Headless Tweeter is Live!!');
-// });
-//
-// app.listen(PORT, () => console.log(`Headless Tweeter is listening on port ${PORT}!`));
+app.get('/', (req, res) => {
+  res.send('Headless Tweeter is Live!!');
+});
 
-scraper('christisraisin')
+app.route('/scrape_user')
+  .post(async function (req, res, next) {
+    let user = req.body.user
+    let tweets = await scraper(user)
+    res.send({tweets: tweets})
+  });
+
+app.listen(PORT, () => console.log(`Headless Tweeter is listening on port ${PORT}!`));
