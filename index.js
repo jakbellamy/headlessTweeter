@@ -14,11 +14,10 @@ app.get('/', (req, res) => {
   res.send('Headless Tweeter is Live!!');
 });
 
-app.route('/scrape_user')
-  .post(async function (req, res, next) {
-    let user = req.body.user
-    let tweets = await scraper(user)
-    res.send({tweets: tweets})
-  });
+app.post('/scrape_user', async (req, res) => {
+  let user = req.body.user
+  let tweets = await scraper(user)
+  res.send({tweets: tweets})
+});
 
 app.listen(PORT, () => console.log(`Headless Tweeter is listening on port ${PORT}!`));
