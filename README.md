@@ -10,7 +10,7 @@ MVP:
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       3. ~~push users tweet text into an array~~  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      4. take server req of twitter handle and serve users tweet array  
+      4. ~~take server req of twitter handle and serve users tweet array~~  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
   &nbsp;&nbsp;&nbsp;
   EXTENDED:  
