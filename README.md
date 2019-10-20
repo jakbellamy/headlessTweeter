@@ -4,7 +4,7 @@ OBJECTIVES:
   MVP:
       1. scrape screenshot of twitter handle's page with puppeteer              [!]
       2. scrape text element with puppeteer and return to console               [!]
-      3. push users tweet text into an array                                    [0]
+      3. push users tweet text into an array                                    [!]
       4. take server req of twitter handle and serve users tweet array          [0]
   EXTENDED:
       5. expand user tweet array by automatically scrolling from the HB         [0]
